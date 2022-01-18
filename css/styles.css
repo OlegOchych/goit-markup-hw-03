@@ -132,7 +132,7 @@ body {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19em;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -146,26 +146,30 @@ body {
   padding-top: 32px;
   display: flex;
 }
-.link-header {
-  padding-right: 50px;
+.link-header { 
+  
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.item-header:not(:last-child){
+  padding-right: 50px;
+}
 .list-grey {
+  margin-left: auto;
   padding-top: 32px;
   display: flex;
+
 }
-.link-grey:first-child {
+.item-grey:first-child{
   padding-right: 50px;
-  margin-left: 281px;
 }
 .link-grey {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -203,7 +207,7 @@ a.link-grey:hover {
   padding-right: 252px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36em;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -216,7 +220,7 @@ a.link-grey:hover {
   height: 50px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87em;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   border-style: none;
   border-radius: 4px;
@@ -230,20 +234,21 @@ a.link-grey:hover {
   padding-top: 94px;
   display: flex;
 }
-.title-features {
+.item-features {
   margin-right: 30px;
 }
 .title-features {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
 }
 .text-features {
+  padding-top: 10px;
   font-size: 14px;
-  line-height: 1.71em;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-grey);
 }
@@ -255,7 +260,7 @@ a.link-grey:hover {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16em;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--acent-color);
 }
@@ -284,7 +289,7 @@ a.link-grey:hover {
   padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16em;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--acent-color);
@@ -293,7 +298,7 @@ a.link-grey:hover {
   padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18em;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--acent-color);
@@ -301,7 +306,7 @@ a.link-grey:hover {
 .our-team-job {
   padding-top: 10px;
   font-size: 16px;
-  line-height: 1.18em;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-grey);
@@ -311,34 +316,37 @@ a.link-grey:hover {
 
 .footer {
   background-color: #2f303a;
-}
-.list-footer {
   padding-top: 60px;
 }
+
+
 .logo-footer {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19em;
+  line-height: 1.19;
   color: var(--color-white);
 }
-.link-footer:first-child {
-  color: var(--color-white);
-}
-.link-footer:first-child {
+.list-footer {
   margin-top: 20px;
 }
-.link-footer:nth-child(2) {
+.link-footer:first-child {
+  color: var(--color-white);
+}
+.item-footer:first-child {
+  margin-top: 20px;
+}
+.item-footer:nth-child(2) {
   padding-top: 9px;
 }
-.link-footer:nth-child(3) {
+.item-footer:nth-child(3) {
   padding-top: 9px;
 }
 .link-footer {
   display: flex;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.71em;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
