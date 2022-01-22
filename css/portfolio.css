@@ -110,14 +110,14 @@ button {
 body {
   font-family: roboto, sans-serif;
 }
+
+/*------------HEADER----------*/
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-/*------------HEADER----------*/
-
 .header {
   border-bottom: solid 1px #ececec;
 }
@@ -132,7 +132,7 @@ body {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19em;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -143,31 +143,40 @@ body {
   display: flex;
 }
 .list-header {
-  padding-top: 32px;
   display: flex;
 }
-.link-header {
-  padding-right: 50px;
+.link-header { 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.item-header{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.item-header:not(:last-child){
+  margin-right: 50px;
+}
 .list-grey {
   margin-left: auto;
-  padding-top: 32px;
   display: flex;
 }
-.item-grey:first-child {
-  padding-right: 50px;
+.item-grey{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.item-grey:first-child{
+  margin-right: 50px;
 }
 .link-grey {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .link-header {
   color: var(--accent-color);
 }
@@ -187,10 +196,12 @@ a.link-grey:hover {
   color: var(--color-blue);
 }
 /*------------MAIN---------*/
-
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .list-btn {
   display: flex;
-  padding-top: 94px;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -216,19 +227,14 @@ a.link-grey:hover {
   line-height: 26px;
   letter-spacing: 0.03em;
 }
-.btn-text {
-
-}
-
 .list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .item {
   border: 1px solid #eeeeee;
@@ -236,7 +242,12 @@ a.link-grey:hover {
 .column-3 {
   height: 361.91px;
 }
-
+.div-text{
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
 .title {
   font-weight: 700;
   font-size: 18px;
@@ -256,6 +267,7 @@ a.link-grey:hover {
 .footer {
   background-color: #2f303a;
 padding-top: 60px;
+padding-bottom: 60px; 
 }
 
 .logo-footer {
