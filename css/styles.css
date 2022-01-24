@@ -282,10 +282,10 @@ a.link-grey:hover {
 /*-------OUR-TEAM----------*/
 .our-team{
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team-list {
   display: flex;
-  padding-bottom: 94px;
 }
 .our-team-item {
   margin-right: 30px;
@@ -301,6 +301,7 @@ a.link-grey:hover {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--acent-color);
+  margin-bottom: 50px;
 }
 .our-team-names {
   padding-top: 30px;
@@ -339,9 +340,7 @@ a.link-grey:hover {
 .list-footer {
   margin-top: 20px;
 }
-.link-footer:first-child {
-  color: var(--color-white);
-}
+
 .item-footer:first-child {
   margin-top: 20px;
 }
@@ -351,13 +350,21 @@ a.link-grey:hover {
 .item-footer:nth-child(3) {
   margin-top: 9px;
 }
-.link-footer {
+.link-footer{
   display: flex;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+    color: var(--color-grey);
+}
+.link-footer-street{
+  display: flex;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
 }
 a.link-footer-street:hover {
   color: var(--color-blue);
